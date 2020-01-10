@@ -677,6 +677,7 @@ namespace UnamedProject
 		}
 
 		[Test]
+		[NonParallelizable] // On MacOS, parallel /restore causes issues
 		public void BuildApplicationAndClean ([Values (false, true)] bool isRelease, [Values ("apk", "aab")] string packageFormat)
 		{
 			var proj = new XamarinFormsAndroidApplicationProject {
@@ -1028,6 +1029,7 @@ namespace UnamedProject
 		}
 
 		[Test]
+		[NonParallelizable] // On MacOS, parallel /restore causes issues
 		public void BuildProguardEnabledProject ([Values (true, false)] bool isRelease, [Values ("dx", "d8")] string dexTool, [Values ("", "proguard", "r8")] string linkTool)
 		{
 			var proj = new XamarinFormsAndroidApplicationProject {
@@ -3400,6 +3402,7 @@ AAMMAAABzYW1wbGUvSGVsbG8uY2xhc3NQSwUGAAAAAAMAAwC9AAAA1gEAAAAA") });
 					KnownPackages.SupportFragment_27_0_2_1,
 					KnownPackages.SupportMediaCompat_27_0_2_1,
 					KnownPackages.GooglePlayServicesMaps_42_1021_1,
+					KnownPackages.Xamarin_Build_Download_0_4_11,
 				},
 			};
 			//NOTE: BuildingInsideVisualStudio prevents the projects from being built as dependencies
