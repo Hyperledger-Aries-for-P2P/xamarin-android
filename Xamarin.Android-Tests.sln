@@ -1,4 +1,4 @@
-Microsoft Visual Studio Solution File, Format Version 12.00
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29411.108
 MinimumVisualStudioVersion = 10.0.40219.1
@@ -95,6 +95,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Java.Interop-Tests", "src\Mono.Android\Test\Java.Interop-Tests\Java.Interop-Tests.csproj", "{6CB00820-A66B-43E5-8785-ED456C6E9F39}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Java.Interop", "external\Java.Interop\src\Java.Interop\Java.Interop.csproj", "{94BD81F7-B06F-4295-9636-F8A3B6BDC762}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{AB21EC70-39C8-4042-A4A7-8DCFED863168}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "emulator", "emulator", "{6047A9DA-02F1-49E8-B547-2DD16F50054B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "checkboottimes", "tests\emulator\checkboottimes\checkboottimes.csproj", "{1A8BA0A8-C696-4798-9899-2CB2BCAE40CD}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
@@ -259,6 +265,10 @@ Global
 		{94BD81F7-B06F-4295-9636-F8A3B6BDC762}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94BD81F7-B06F-4295-9636-F8A3B6BDC762}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94BD81F7-B06F-4295-9636-F8A3B6BDC762}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A8BA0A8-C696-4798-9899-2CB2BCAE40CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A8BA0A8-C696-4798-9899-2CB2BCAE40CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A8BA0A8-C696-4798-9899-2CB2BCAE40CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A8BA0A8-C696-4798-9899-2CB2BCAE40CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -297,6 +307,8 @@ Global
 		{D1243BAB-23CA-4566-A2A3-3ADA2C2DC3AF} = {EFBC4DC0-DBFF-4DAA-B0B8-6D0CB02A25F5}
 		{6CB00820-A66B-43E5-8785-ED456C6E9F39} = {EFBC4DC0-DBFF-4DAA-B0B8-6D0CB02A25F5}
 		{94BD81F7-B06F-4295-9636-F8A3B6BDC762} = {EFBC4DC0-DBFF-4DAA-B0B8-6D0CB02A25F5}
+		{6047A9DA-02F1-49E8-B547-2DD16F50054B} = {AB21EC70-39C8-4042-A4A7-8DCFED863168}
+		{1A8BA0A8-C696-4798-9899-2CB2BCAE40CD} = {6047A9DA-02F1-49E8-B547-2DD16F50054B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8643CD20-B195-4919-8135-27549488237E}

@@ -50,6 +50,18 @@
             "problemMatcher": [
                 "$msCompile"
             ]
-        }
+        },
+        {
+          "label": "build-emulator-checkboottimes",
+          "type": "shell",
+          "command": "msbuild tests/emulator/checkboottimes/checkboottimes.csproj",
+          "group": {
+              "kind": "build",
+              "isDefault": true
+          },
+          "problemMatcher": [
+              "$msCompile"
+          ]
+      },
     ]
 }

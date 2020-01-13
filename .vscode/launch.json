@@ -17,6 +17,16 @@
             "request": "attach",
             "address": "localhost",
             "port": 55555
+        },
+        {
+          "name": "Launch emulator boot benchmark",
+          "type": "coreclr",
+          "request": "launch",
+          "preLaunchTask": "build-emulator-checkboottimes",
+          "program": "${workspaceRoot}/tests/emulator/checkboottimes/bin/Debug/netcoreapp2.2/checkboottimes.dll",
+          "args": [ ],
+          "cwd": "${workspaceRoot}",
+          "stopAtEntry": false
         }
     ]
 }
